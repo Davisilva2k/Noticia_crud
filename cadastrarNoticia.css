@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img/fundo_cadastrarNoticia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #e5fc82;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00aeff;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: rgb(255, 252, 252);
+    border-radius: 8px;
+    font-size: 20px;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #f50000;
+    color: #000000;
+    outline: none;
+}
+
+/*BOTÃO VOLTAR A TELA ANTERIOR */
+input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    margin: 1%;
+    background-color: #00e900;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #00e900;
+    margin: 1%;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+input[type="button"]:hover{
+    background-color:#5c5c5c;
+}
+button[type="submit"]:hover {
+    background-color: #5c5c5c;
+}
+
+script {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+}

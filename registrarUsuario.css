@@ -1,0 +1,113 @@
+/* Registrar.css */
+
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/fundo_cadastrarNoticia.jpg);
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem fica fixa ao rolar a página */
+    padding: 120px;
+    min-height: 100vh; /* Garante que o corpo tenha a altura mínima da tela */
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para destacar o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #00ffff;
+}
+
+/* Estilizando os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Estilizando os botões */
+input[type="submit"],
+input[type="button"],
+button[type="button"] {
+    width: 100%;
+    padding: 12px;
+    margin: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button[type="button"]:hover {
+    background-color: #0051ff; /* Verde para ação */
+}
+
+button[type="button"]:hover {
+    background-color: #ecf0ec;
+}
+
+/* Estilos para mensagens de erro ou sucesso */
+.error-message,
+.success-message {
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: #f44336;
+}
+
+.success-message {
+    background-color: #4CAF50;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffede1; /* Fundo em tom de creme quente */
+    color: #333; /* Texto em tom escuro para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background-color: #fff3e0; /* Fundo laranja suave */
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
+#titulo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #e65100; /* Laranja intenso */
+    margin-bottom: 20px;
+}
+
+/* Inputs do formulário */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffa726; /* Bordas em tom laranja */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão de login */
+input[type="submit"] {
+    background-color: #ff5722; /* Tom quente de vermelho */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e64a19; /* Vermelho mais escuro no hover */
+}
+
+/* Links */
+a {
+    color: #ff7043; /* Tom quente de laranja */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d84315; /* Laranja mais profundo no hover */
+}
+
+/* Mensagem de erro */
+.mensagem p {
+    color: #d32f2f; /* Vermelho para erro */
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Ajuste do texto */
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Ajuste do espaço interno no formulário */
+form {
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #titulo {
+        font-size: 22px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}

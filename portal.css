@@ -1,0 +1,132 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FFEB3B, #FF5722); /* Degradê de amarelo e laranja */
+    color: #333; /* Texto escuro para contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Cabeçalho fixo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF9800; /* Laranja alegre */
+    color: #fff;
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Fixa o cabeçalho acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header div img {
+    width: 50px; /* Logo responsivo */
+}
+
+header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Ajuste do conteúdo principal */
+main {
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Título */
+.sub-titulo {
+    font-size: 32px;
+    color: #FFF;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Botões */
+#botaoUmDois,
+#botaoTresQuatro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#botaoUmDois a,
+#botaoTresQuatro a {
+    background-color: #FF5722; /* Laranja forte */
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 48%;
+    transition: background-color 0.3s ease;
+}
+
+#botaoUmDois a:hover,
+#botaoTresQuatro a:hover {
+    background-color: #FF9800; /* Laranja mais suave */
+}
+
+/* Links */
+a {
+    color: #FFEB3B; /* Amarelo vibrante */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff; /* Branco ao passar o mouse */
+}
+
+/* Estilo de mensagem */
+.mensagem p {
+    color: #FF5722; /* Vermelho-alaranjado para erro */
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header div img {
+        margin-bottom: 10px;
+    }
+
+    #botaoUmDois a,
+    #botaoTresQuatro a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sub-titulo {
+        font-size: 28px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,128 @@
+/* cssConsultarUsuario.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Fundo claro e neutro */
+    color: #333; /* Cor do texto principal */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 24px;
+    color: #fa0000; /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #00ffdd;
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0077b6; /* Azul mais vibrante */
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Fundo branco para a tabela */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dcdcdc; /* Borda suave cinza */
+}
+
+th {
+    background-color: #0077b6; /* Azul vibrante */
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f9fc; /* Linhas alternadas com fundo suave */
+}
+
+tr:hover {
+    background-color: #e0f7fa; /* Efeito hover suave nas linhas */
+}
+
+/* Estilos para as ações (editar e deletar) */
+td a {
+    margin-right: 10px;
+    color: #0077b6;
+    border: 1px solid #0077b6;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td a:hover {
+    background-color: #00ffdd;;
+    color: white;
+}
+
+/* Estilização dos botões de ação (Adicionar Usuário, Logout) */
+a:first-of-type {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+a:first-of-type:hover {
+    background-color: #004d73; /* Cor mais escura no hover */
+}
+
+/* Estilização de elementos de tabela com ênfase */
+th, td {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    a:first-of-type {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    td a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}

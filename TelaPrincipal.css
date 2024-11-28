@@ -1,0 +1,118 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Slightly softer background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Ensure text color is consistent */
+}
+
+/* Header Styling */
+header {
+    background-color: #333; /* Dark header background */
+    color: #fff;
+    padding: 15px 30px; /* Adjust padding for better balance */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+#logo_cabecalho {
+    width: 150px;
+    height: auto; /* Make sure logo aspect ratio is preserved */
+}
+
+#botao_login {
+    font-size: 18px; /* Slightly smaller size for better fit */
+    display: flex;
+    align-items: center;
+}
+#botaoUmDois{
+    text-align: center;
+    justify-content: center;
+}
+#botaoTresQuatro{
+    text-align: center;
+    justify-content: center;
+}
+/* Button Styling */
+.botao-login {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px; /* Slightly larger text */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.botao-login:hover {
+    background-color: #0056b3;
+}
+
+/* Container Styling */
+.container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 30px auto; /* Add space between content and edges */
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Softer, larger shadow */
+    border-radius: 8px;
+    text-align: left; /* Left align text inside container for a modern feel */
+}
+
+/* News Article Styling */
+.noticia {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.noticia img {
+    width: 100%; /* Image now takes full width, maintaining aspect ratio */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.noticia h2 {
+    font-size: 28px; /* Larger headline for readability */
+    color: #333;
+    margin: 20px 0;
+}
+
+.noticia p {
+    font-size: 18px; /* Increase font size for better readability */
+    line-height: 1.8;
+    color: #555;
+}
+
+.data-autor {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px; /* Smaller font size for footer */
+    letter-spacing: 1px; /* Slight letter spacing for footer text */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
